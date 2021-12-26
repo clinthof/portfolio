@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'wouter'
+import { links } from '../../data'
 
 const Navbar: React.FC  = () => {
     return (
-        <div>
-            NavBar
+        <div className='navbar'>
+            {links.map(link => <Link to={link.url} key={link.id}>{link.text}</Link>)}
         </div>
     )
 }
