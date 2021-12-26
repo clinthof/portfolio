@@ -1,12 +1,25 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Link } from 'wouter'
 import { links } from '../../data'
 
-const Navbar: React.FC  = () => {
+const CustomNav = styled.div`
+    float: right;
+    right: 5%;
+    position: relative;
+`;
+
+const Navbar: React.FC = () => {
     return (
-        <div className='navbar'>
-            {links.map(link => <Link to={link.url} key={link.id}>{link.text}</Link>)}
-        </div>
+        <>
+            <CustomNav>
+                {links.map(link => 
+                    <Link to={link.url} key={link.id}>
+                        {link.text}
+                    </Link>
+                    )}
+            </CustomNav>        
+        </>
     )
 }
 

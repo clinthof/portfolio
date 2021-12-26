@@ -1,10 +1,10 @@
-interface Params {
+interface Fields {
     id: number,
     text: string,
     url: string,
 }
 
-export const links: Array<Params> = [
+export const links: Array<Fields> = [
     {
         id: 1,
         text: 'about',
