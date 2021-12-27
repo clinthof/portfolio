@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
             <h1>Recent Projects</h1>
             <CardWrapper>
                 {projects.map(project => 
-                    <div key={project.id}>
+                    <div key={project.id} style={{'border':'2px solid black'}}>
                         {project.title} - {project.tools}
                     </div>)}
             </CardWrapper>
