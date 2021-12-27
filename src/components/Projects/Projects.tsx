@@ -1,17 +1,17 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const CardGrid = styled.div`
-
-`;
+import { projects } from '../../data';
+import { CardWrapper } from '../../Styles';
 
 const Projects: React.FC = () => {
     return (
         <div id="projects">
             <h1>Recent Projects</h1>
-            <CardGrid>
-                
-            </CardGrid>
+            <CardWrapper>
+                {projects.map(project => 
+                    <div key={project.id}>
+                        {project.title} - {project.tools}
+                    </div>)}
+            </CardWrapper>
         </div>
     )
 }

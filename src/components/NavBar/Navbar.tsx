@@ -1,13 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'wouter'
 import { links } from '../../data'
-
-const CustomNav = styled.div`
-    float: right;
-    right: 5%;
-    position: relative;
-`;
+import { CustomNav } from '../../Styles'
 
 const Navbar: React.FC = () => {
     return (
