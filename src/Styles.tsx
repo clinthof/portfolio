@@ -3,31 +3,27 @@ import { Link } from 'wouter';
 
 const CustomNav = styled.nav`
     float: right;
-    right: 5%;
     height: 80px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     padding: 0.5rem;
     z-index:999;
-    border: 4px solid black;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 `;
 
 const CustomLink = styled(Link)`
     color: #508ddd;
     display: flex;
     align-items: center;
+    align-self: flex-end;
     text-decoration: none;
     padding: 0 1rem;
-    height: 100%;
-    cursor: pointer;
-
-    &:hover {
-        color: pink;
-    }
-
-    &.active {
-        color: blue;
-    }
+    margin: 0 12px;
+    height: 60%;
 `;
 
 const CardWrapper = styled.div`

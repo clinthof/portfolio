@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { ContactDiv } from '../../Styles'
 
 const Contact: React.FC = () => {
+    const [submitted, setSubmitted] = useState(false);
+
     return (
         <div id="contact">
             <h1>Contact</h1>
