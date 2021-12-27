@@ -1,18 +1,18 @@
 import React from 'react'
-import { Link } from 'wouter'
+// import { Link } from 'wouter'
 import { links } from '../../data'
-import { CustomNav } from '../../Styles'
+import { CustomNav, CustomLink } from '../../Styles'
 
 const Navbar: React.FC = () => {
     return (
         <div>
             <CustomNav>
                 {links.map(link => 
-                    <Link to={link.url} key={link.id}>
+                    <CustomLink to={link.url} key={link.id}>
                         {link.text}
-                    </Link>
+                    </CustomLink>
                     )}
-            </CustomNav>        
+            </CustomNav>
         </div>
     )
 }
