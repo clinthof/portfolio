@@ -56,10 +56,10 @@ const ContactDiv = styled.div`
 `;
 
 export { 
+    Logo,
     CustomNav,
+    NavLinks,
+    CustomLink,
     CardWrapper,
     ContactDiv,
-    CustomLink,
-    Logo,
-    NavLinks,
 }
