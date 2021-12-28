@@ -6,7 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
+  body {
+    color: white;
+    background-color: #242526;
+  }
 `;
 
 ReactDOM.render(

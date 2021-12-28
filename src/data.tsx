@@ -14,22 +14,22 @@ interface ProjectData {
 const links: Array<LinkData> = [
     {
         id: 1,
-        text: 'about',
+        text: 'About',
         url: '/',
     },
     {
         id: 2,
-        text: 'projects',
+        text: 'Projects',
         url: '/projects',
     },
     {
         id: 3,
-        text: 'resume',
+        text: 'Resume',
         url: '/resume',
     },
     {
         id: 4,
-        text: 'contact',
+        text: 'Contact',
         url: '/contact',
     },
 ]

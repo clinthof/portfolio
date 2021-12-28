@@ -1,28 +1,40 @@
 import styled from "styled-components";
 import { Link } from 'wouter';
 
+const Logo = styled.h3`
+    align-self: center; 
+    display: flex;
+    flex: 0;
+    padding: 1em;
+`;
+
 const CustomNav = styled.nav`
-    float: right;
-    height: 80px;
+    height: 70px;
     width: 100%;
     display: flex;
-    justify-content: right;
+    flex-direction: row;
     padding: 0.5rem;
-    z-index:999;
+    z-index: 999;
     position: sticky;
-    top: 0px;
-    background-color: white;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    top: 0;
+    background-color: black;
+    box-shadow: 0 4px 10px -2px #000000cc;
+`;
+
+const NavLinks = styled.div`
+    display: flex;
+    margin-left: auto;
 `;
 
 const CustomLink = styled(Link)`
-    color: #508ddd;
+    color: white;
     display: flex;
     align-items: center;
-    align-self: flex-end;
+    align-self: center;
+    justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
-    margin: 0 12px;
+    padding: 0 0.5rem;
+    margin: 0 20px;
     height: 60%;
 `;
 
@@ -48,4 +60,6 @@ export {
     CardWrapper,
     ContactDiv,
     CustomLink,
+    Logo,
+    NavLinks,
 }
