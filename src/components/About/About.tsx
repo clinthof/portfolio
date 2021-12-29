@@ -1,5 +1,6 @@
 import React from 'react'
 import { Greeting } from '../../Styles'
+// import { motion } from 'framer-motion'
 
 const About: React.FC = () => {
     return (
