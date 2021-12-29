@@ -2,10 +2,8 @@ import styled from "styled-components";
 import { Link } from 'wouter';
 
 const Greeting = styled.div`
-    margin: 5%;
     border: 2px solid red;
     font-size: 300%;
-    color: black;
 `;
 
 const Logo = styled.h3`
@@ -13,6 +11,21 @@ const Logo = styled.h3`
     display: flex;
     color: black;
     font-size: x-large;
+`;
+
+const Button = styled.button`
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 6px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        background-color: #eeeeee;
+    }
 `;
 
 const CustomNav = styled.nav`
@@ -43,50 +56,6 @@ const CustomLink = styled(Link)`
     padding: 0 0.5rem;
     margin: 0 20px;
     height: 60%;
-
-    &:before, &:after {
-  
-    }
-    &:before {
-    
-    }
-    &:after {
-    
-    }
-    @-webkit-keyframes left-up {
-        0% {
-
-        }
-        50% {
-
-        }
-        100% {
-
-        }
-    }
-    @-webkit-keyframes right-dn {
-        0% {
-
-        }
-        50% {
-
-        }
-        100% {
-
-        }
-    }
-    &:hover {
-
-    }
-    &:hover:after, &:hover:before {
-
-    }
-    &:hover:before {
-        
-    }
-    &:hover:after {
-        
-    }
 `;
 
 const CardWrapper = styled.div`
@@ -109,6 +78,7 @@ const ContactDiv = styled.div`
 export { 
     Greeting,
     Logo,
+    Button,
     CustomNav,
     NavLinks,
     CustomLink,
