@@ -1,10 +1,16 @@
 import React from 'react'
+import { Greeting } from '../../Styles'
 
 const About: React.FC = () => {
     return (
-        <div id="about-container">
-            <div id="greeting-bio">
-                <h1>Hi, I'm Felix.</h1>
+        <div style={{
+            border: '2px solid blue',
+        }}>
+            <div style={{
+                border: '2px solid green',
+                margin: '6px',
+            }}>
+                <Greeting>Hi, I'm Felix.</Greeting>
                 <p>
                     I'm a recent computer science graduate 
                     designing responsive web applications with React.
