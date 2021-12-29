@@ -6,7 +6,9 @@ const Navbar: React.FC = () => {
     return (
         <>
             <CustomNav>
-                <Logo>LOGO</Logo>
+                <Logo>
+                    <CustomLink to='/'>felix.</CustomLink>
+                </Logo>
                 <NavLinks>
                     {links.map(link => 
                         <CustomLink to={link.url} key={link.id}>
