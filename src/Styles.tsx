@@ -1,13 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { Link } from 'wouter';
 
-const Greeting = styled.div`
-    border: 2px solid red;
-    font-size: 300%;
-`;
-
 const Logo = styled.h3`
-    align-self: center; 
     display: flex;
     color: black;
     font-size: x-large;
@@ -61,8 +55,8 @@ const CustomLink = styled(Link)`
 const CardWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-template: 150px / auto auto auto;
+    gap: 20px 10px;
+    grid-template: auto auto auto;
     border: 4px solid black;
 `;
 
@@ -75,8 +69,15 @@ const ContactDiv = styled.div`
     box-sizing: border-box;
 `;
 
+const FooterWrapper = styled.div`
+    height: 50%;
+`;
+
+// TODO: make footer buttons; animate
+// const InstagramButton = styled
+// const LinkedInButton = styled
+
 export { 
-    Greeting,
     Logo,
     Button,
     CustomNav,
@@ -84,4 +85,5 @@ export {
     CustomLink,
     CardWrapper,
     ContactDiv,
+    FooterWrapper,
 }

@@ -1,6 +1,7 @@
-import React from 'react'
-import { links } from '../../data'
-import { CustomNav, CustomLink, Logo, NavLinks, } from '../../Styles'
+import React from 'react';
+import { links } from '../../data';
+import { CustomNav, CustomLink, Logo, NavLinks, } from '../../Styles';
+// import { motion } from 'framer-motion'
 
 const Navbar: React.FC = () => {
     return (
@@ -10,16 +11,16 @@ const Navbar: React.FC = () => {
             </Logo>
             <NavLinks>
                 {links.map(link => 
-                    <CustomLink 
-                        to={link.url}
-                        key={link.id}
-                    >
-                        {link.text}
-                    </CustomLink>
+                        <CustomLink
+                            to={link.url}
+                            key={link.id}
+                        >
+                            {link.text}
+                        </CustomLink>
                     )}
             </NavLinks>
         </CustomNav>
     )
-}
+};
 
-export default Navbar
+export default Navbar;

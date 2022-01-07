@@ -1,17 +1,24 @@
-import React from 'react'
+import React from 'react';
 import resume from '../../assets/Felix_Clinthorne_Resume.png';
 import DownloadIcon from '@mui/icons-material/Download';
 import { Button } from '../../Styles';
 
 const Resume: React.FC = () => {
     return (
-        <div>
-            <div id="resume-container" style={{
-                'display':'flex',
-                'justifyContent':'center',
-                'alignContent':'center',
-                'width':'100%',
-            }}>
+        <div id='resume-page-container'
+            style={{
+                'border': '2px solid blue',
+            }}
+        >
+            <div id="resume-wrapper"
+                style={{
+                    'display':'flex',
+                    'justifyContent':'center',
+                    'alignContent':'center',
+                    'width':'100%',
+                    'border': '2px solid green',
+                }}
+            >
                 <img 
                     alt='resume'
                     src={String(resume)}
@@ -20,11 +27,11 @@ const Resume: React.FC = () => {
                     }}
                 />
             </div>
-            <div id='download-btn'
+            <div id='download-btn-wrapper'
                 style={{
                     display: 'flex',
                     justifyContent: 'center',
-                    marginBottom: '2%',
+                    margin: '2%',
                 }}>
                 <Button>
                     <DownloadIcon />
@@ -34,6 +41,6 @@ const Resume: React.FC = () => {
         </div>
 
     )
-}
+};
 
-export default Resume
+export default Resume;

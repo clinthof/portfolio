@@ -3,10 +3,10 @@ import React from 'react'
 const Home: React.FC = () => {
     return (
         <div>
-            HOMEPAGE
+            Homepage component
         </div>
     )
-}
+};
 
 export default Home;
 
