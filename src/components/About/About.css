@@ -1,0 +1,24 @@
+#about-page-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+#about-bio {
+    margin: 6px;
+}
+
+#about-greeting {
+    font-size: 10vh;
+}
+
+#about-photo-wrapper {
+    float: right;
+    margin-right: 5vw;
+    justify-self: center;
+    margin: 2vw;
+}
+
+#about-photo {
+    border-radius: 50%;
+}
