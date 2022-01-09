@@ -5,18 +5,13 @@ import { Button } from '../../Styles';
 
 const Resume: React.FC = () => {
     return (
-        <div id='resume-page-container'
-            style={{
-                'border': '2px solid blue',
-            }}
-        >
+        <div id='resume-page-container'>
             <div id="resume-wrapper"
                 style={{
                     'display':'flex',
                     'justifyContent':'center',
                     'alignContent':'center',
                     'width':'100%',
-                    'border': '2px solid green',
                 }}
             >
                 <img 
@@ -33,10 +28,12 @@ const Resume: React.FC = () => {
                     justifyContent: 'center',
                     margin: '2%',
                 }}>
-                <Button>
-                    <DownloadIcon />
-                    download
-                </Button>
+                <a href="path_to_file">
+                    <Button>
+                        <DownloadIcon />
+                        download
+                    </Button>
+                </a>
             </div>
         </div>
 
