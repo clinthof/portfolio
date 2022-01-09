@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { ContactDiv } from '../../Styles'
+import React from 'react'
+// import { ContactDiv } from '../../Styles'
 
 const Contact: React.FC = () => {
-    const [submitted, setSubmitted] = useState(false);
+    // const [submitted, setSubmitted] = useState(false);
 
     return (
         <div id="contact">
