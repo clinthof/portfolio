@@ -1,11 +1,19 @@
 import React from 'react';
-import { FooterWrapper } from '../../Styles';
+import { FooterContainer } from './FooterStyles';
 
 const Footer: React.FC = () => {
     return (
-        <FooterWrapper>
-            Footer component
-        </FooterWrapper>
+        <FooterContainer>
+            <h3 
+                style={{ 
+                    color: "white", 
+                    textAlign: "center", 
+                    marginTop: "-60px" 
+                }}
+            >
+        Check me out elsewhere:
+      </h3>
+        </FooterContainer>
     )
 }
 
