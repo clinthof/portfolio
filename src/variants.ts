@@ -1,25 +1,5 @@
 import { Variants } from "framer-motion/types/types";
 
-// interface Transition {
-//     type: string;
-//     delay: number;
-//     duration: number;
-// }
-
-// interface Hidden {
-//     y: string;
-// }
-
-// interface Visible {
-//     y: number;
-//     [key: string]: Transition;
-// }
-
-// interface PhotoVariant {
-//     hidden: Hidden;
-//     visible: Visible;
-// }
-
 const photoVariant: Variants | undefined = {
     hidden: {
         y: '100vh',
@@ -34,4 +14,33 @@ const photoVariant: Variants | undefined = {
     },
 };
 
-export { photoVariant, }
+const aboutBioVariant: Variants | undefined = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 0.4,
+            staggerChildren: 0.4,
+        },
+    },
+}
+
+const bioChildVariant: Variants | undefined = {
+        hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 0.4,
+        },
+    },
+}
+
+export { 
+    photoVariant,
+    aboutBioVariant,
+    bioChildVariant,
+}
