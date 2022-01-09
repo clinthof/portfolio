@@ -27,11 +27,13 @@ const CustomNav = styled.nav`
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0.5rem;
+    padding: 0 5rem;
     z-index: 999;
     position: sticky;
     top: 0;
     background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 `;
 
 const NavLinks = styled.div`
@@ -41,7 +43,7 @@ const NavLinks = styled.div`
 `;
 
 const CustomLink = styled(Link)`
-    color: black;
+    color: #000000;
     display: flex;
     align-items: center;
     align-self: center;
@@ -69,10 +71,6 @@ const ContactDiv = styled.div`
     box-sizing: border-box;
 `;
 
-const FooterWrapper = styled.div`
-    height: 50%;
-`;
-
 // TODO: make footer buttons; animate
 // const InstagramButton = styled
 // const LinkedInButton = styled
@@ -85,5 +83,4 @@ export {
     CustomLink,
     CardWrapper,
     ContactDiv,
-    FooterWrapper,
 }
