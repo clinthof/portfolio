@@ -2,20 +2,29 @@ import React from 'react';
 import './About.css';
 import { motion } from 'framer-motion';
 import profilePhoto from '../../assets/profile_photo.jpg';
-import { photoVariant } from '../../variants';
+import { photoVariant, aboutBioVariant, bioChildVariant, } from '../../variants';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const About: React.FC = () => {
     return (
         <div id='about-page-container'>
-            <div id='about-bio'>
-                <div id='about-greeting'>
-                    A meaningful greeting.
-                </div>
-                <p>
-                    An even more meaningful, endearing, impressive, 
-                    and descriptive (but concise) bio.
-                </p>
-            </div>
+            <motion.div 
+                id='about-bio'
+                variants={aboutBioVariant}
+                initial="hidden"
+                animate="visible"
+            >
+                <motion.div id='about-greeting' variants={bioChildVariant}>
+                   <span>Hi! </span>
+                   <span>I'm Felix.</span>
+                </motion.div>
+                <motion.div id='about-intro' variants={bioChildVariant}>
+                    I'm a recent computer science graduate
+                    developing web applications with React.
+                </motion.div>
+            </motion.div>
             <motion.div
                 id='about-photo-wrapper'
                 variants={photoVariant}
@@ -28,6 +37,17 @@ const About: React.FC = () => {
                     src={String(profilePhoto)}
                 />
             </motion.div>
+            <div id='social-links'>
+                <div id='github-profile'>
+                    <GitHubIcon />
+                </div>
+                <div id='linkedin-profile'>
+                    <LinkedInIcon />                    
+                </div>
+                <div id='instagram-profile'>
+                    <InstagramIcon />                
+                </div>
+            </div>
         </div>
     )
 };
