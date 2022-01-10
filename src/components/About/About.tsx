@@ -2,10 +2,14 @@ import React from 'react';
 import './About.css';
 import { motion } from 'framer-motion';
 import profilePhoto from '../../assets/profile_photo.jpg';
-import { photoVariant, aboutBioVariant, bioChildVariant, } from '../../variants';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { profileLinks } from '../../data';
+import { 
+    photoVariant, 
+    aboutBioVariant, 
+    bioChildVariant, 
+    socialGridVariant,
+    socialChildVariant, 
+} from '../../variants';
 
 const About: React.FC = () => {
     return (
@@ -16,13 +20,40 @@ const About: React.FC = () => {
                 initial="hidden"
                 animate="visible"
             >
-                <motion.div id='about-greeting' variants={bioChildVariant}>
-                   <span>Hi! </span>
-                   <span>I'm Felix.</span>
+                <motion.div 
+                    className='title'
+                    id='about-greeting'
+                    variants={bioChildVariant}
+                >
+                    Hi! I'm Felix.
                 </motion.div>
                 <motion.div id='about-intro' variants={bioChildVariant}>
                     I'm a recent computer science graduate
                     developing web applications with React.
+                </motion.div>
+                <motion.div 
+                    id='social-links-container'
+                    variants={socialGridVariant}
+                >
+                    {profileLinks.map(socialLink => {
+                        return(
+                            <motion.div
+                                variants={socialChildVariant}
+                                key={socialLink.href}
+                            >
+                                <a  
+                                    key={socialLink.href}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    href={socialLink.href}
+                                    className='social-link'
+                                    id={socialLink.id}
+                                >
+                                    {socialLink.component}
+                                </a>  
+                            </motion.div> 
+                        )
+                    })}
                 </motion.div>
             </motion.div>
             <motion.div
@@ -37,17 +68,6 @@ const About: React.FC = () => {
                     src={String(profilePhoto)}
                 />
             </motion.div>
-            <div id='social-links'>
-                <div id='github-profile'>
-                    <GitHubIcon />
-                </div>
-                <div id='linkedin-profile'>
-                    <LinkedInIcon />                    
-                </div>
-                <div id='instagram-profile'>
-                    <InstagramIcon />                
-                </div>
-            </div>
         </div>
     )
 };
