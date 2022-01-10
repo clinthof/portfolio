@@ -3,7 +3,6 @@ import { Link } from 'wouter';
 
 const Logo = styled.h3`
     display: flex;
-    color: black;
     font-size: x-large;
 `;
 
@@ -43,7 +42,6 @@ const NavLinks = styled.div`
 `;
 
 const CustomLink = styled(Link)`
-    color: black;
     display: flex;
     align-items: center;
     align-self: center;
