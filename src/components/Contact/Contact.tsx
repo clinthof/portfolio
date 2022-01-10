@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
 
     return (
         <div id="contact">
-            <h1>Contact</h1>
+            <h1 className='title'>Contact</h1>
             <div id="contact-form-container">
                 <form
                     method='POST'
