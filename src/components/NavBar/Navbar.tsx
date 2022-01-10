@@ -1,7 +1,6 @@
 import React from 'react';
-import { links } from '../../data';
+import { navLinks } from '../../data';
 import { CustomNav, CustomLink, Logo, NavLinks, } from '../../Styles';
-// import { motion } from 'framer-motion'
 
 const Navbar: React.FC = () => {
     return (
@@ -10,7 +9,7 @@ const Navbar: React.FC = () => {
                 <CustomLink to='/'>felix.</CustomLink>
             </Logo>
             <NavLinks>
-                {links.map(link => 
+                {navLinks.map(link => 
                         <CustomLink
                             to={link.url}
                             key={link.id}
