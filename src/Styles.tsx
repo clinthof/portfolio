@@ -6,21 +6,6 @@ const Logo = styled.h3`
     font-size: x-large;
 `;
 
-const Button = styled.button`
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    padding: 6px 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    cursor: pointer;
-    overflow: hidden;
-
-    &:hover {
-        background-color: #eeeeee;
-    }
-`;
-
 const CustomNav = styled.nav`
     height: 70px;
     width: 100%;
@@ -70,13 +55,8 @@ const ContactDiv = styled.div`
     box-sizing: border-box;
 `;
 
-// TODO: make footer buttons; animate
-// const InstagramButton = styled
-// const LinkedInButton = styled
-
 export { 
     Logo,
-    Button,
     CustomNav,
     NavLinks,
     CustomLink,
