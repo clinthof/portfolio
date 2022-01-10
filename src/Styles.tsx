@@ -31,7 +31,7 @@ const CustomNav = styled.nav`
     z-index: 999;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #129272;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 `;
@@ -43,7 +43,7 @@ const NavLinks = styled.div`
 `;
 
 const CustomLink = styled(Link)`
-    color: #000000;
+    color: black;
     display: flex;
     align-items: center;
     align-self: center;
@@ -52,6 +52,7 @@ const CustomLink = styled(Link)`
     padding: 0 0.5rem;
     margin: 0 20px;
     height: 60%;
+    color: white;
 `;
 
 const CardWrapper = styled.div`
