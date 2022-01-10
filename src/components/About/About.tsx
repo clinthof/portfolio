@@ -1,5 +1,4 @@
 import React from 'react';
-import './About.css';
 import { motion } from 'framer-motion';
 import profilePhoto from '../../assets/profile_photo.jpg';
 import { profileLinks } from '../../data';
@@ -15,7 +14,7 @@ const About: React.FC = () => {
     return (
         <div id='about-page-container'>
             <motion.div 
-                id='about-bio'
+                className='content-container'
                 variants={aboutBioVariant}
                 initial="hidden"
                 animate="visible"
