@@ -1,5 +1,4 @@
 import React from 'react';
-import './Projects.css';
 import { projects } from '../../data';
 import { CardWrapper } from '../../Styles';
 
