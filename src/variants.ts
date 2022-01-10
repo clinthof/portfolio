@@ -15,6 +15,15 @@ const photoVariant: Variants | undefined = {
 };
 
 const aboutBioVariant: Variants | undefined = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.4,
+        },
+    },
+}
+
+const bioChildVariant: Variants | undefined = {
     hidden: {
         opacity: 0,
     },
@@ -22,20 +31,33 @@ const aboutBioVariant: Variants | undefined = {
         opacity: 1,
         transition: {
             duration: 0.4,
-            staggerChildren: 0.4,
         },
     },
 }
 
-const bioChildVariant: Variants | undefined = {
-        hidden: {
+const socialGridVariant: Variants | undefined = {
+    hidden: {
+
+    },
+    visible: {
+        transition: {
+            staggerChildren: 0.2,
+        }
+    },
+}
+
+const socialChildVariant: Variants | undefined = {
+    hidden: {
+        y: '40vh',
         opacity: 0,
     },
     visible: {
+        y: 20,
         opacity: 1,
         transition: {
-            duration: 0.4,
-        },
+            type: 'spring',
+            stiffness: 60,
+        }
     },
 }
 
@@ -43,4 +65,6 @@ export {
     photoVariant,
     aboutBioVariant,
     bioChildVariant,
+    socialGridVariant,
+    socialChildVariant,
 }
