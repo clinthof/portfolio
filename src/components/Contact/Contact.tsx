@@ -5,7 +5,10 @@ const Contact: React.FC = () => {
     // const [submitted, setSubmitted] = useState(false);
 
     return (
-        <div id="contact">
+        <div
+            id="contact"
+            className='content-container'
+        >
             <h1 className='title'>Contact</h1>
             <div id="contact-form-container">
                 <form
