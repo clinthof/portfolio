@@ -2,12 +2,15 @@ import { Variants } from "framer-motion/types/types";
 
 const photoVariant: Variants | undefined = {
     hidden: {
-        y: '100vh',
+        y: '40vh',
+        opacity: 0,
     },
     visible: {
+        opacity: 1,
         y: 20,
         transition: {
             type: 'spring',
+            stiffness: 80,
             delay: 0.05,
             duration: 1,
         }
