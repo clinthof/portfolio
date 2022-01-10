@@ -5,11 +5,14 @@ import { CardWrapper } from '../../Styles';
 
 const Projects: React.FC = () => {
     return (
-        <div id="projects-container">
+        <div 
+            className='content-container'
+            id='projects-container'
+        >
             <h1>Recent Projects</h1>
             <CardWrapper>
                 {projects.map(project => 
-                    <div key={project.id} style={{'border':'2px solid red'}}>
+                    <div key={project.id}>
                         {project.title} - {project.tools}
                     </div>)}
             </CardWrapper>
