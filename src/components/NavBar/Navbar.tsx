@@ -10,10 +10,7 @@ const Navbar: React.FC = () => {
             </Logo>
             <NavLinks>
                 {navLinks.map(link => 
-                        <CustomLink
-                            to={link.url}
-                            key={link.id}
-                        >
+                        <CustomLink to={link.url} key={link.id}>
                             {link.text}
                         </CustomLink>
                     )}
