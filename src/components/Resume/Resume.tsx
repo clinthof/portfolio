@@ -1,4 +1,3 @@
-import React from 'react';
 import resume from '../../assets/Felix_Clinthorne_Resume.png';
 
 const Resume: React.FC = () => {
@@ -10,14 +9,13 @@ const Resume: React.FC = () => {
                     'justifyContent':'center',
                     'alignContent':'center',
                     'width':'100%',
+                    'margin': '4% 0',
                 }}
             >
                 <img 
                     alt='resume'
                     src={String(resume)}
-                    style={{
-                        'width':'60%',
-                    }}
+                    style={{'width':'60%'}}
                 />
             </div>
         </div>
