@@ -94,6 +94,61 @@
     animation: instaGradient 8s infinite;
 }
 
-#projects-container {
+.project-page-container {
     display: grid;
+    margin: 2% 10% 0 0;
+}
+
+#projects-container {
+    color: white;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 4%;
+    height: 350px;
+    background-color: rgb(61, 61, 61);
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+    grid-template: auto auto auto;
+}
+
+#skill-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template: auto;
+    background-color: rgb(27, 27, 27);
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+.skill-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 4%;
+    font-size: 3em;
+    background-color: rgb(61, 61, 61);
+}
+
+.skill-img {
+    height: 80%;
+}
+
+#resume-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 4% 0;
 }
