@@ -1,19 +1,10 @@
-import React from 'react'
-// import { ContactDiv } from '../../Styles'
 
 const Contact: React.FC = () => {
-    // const [submitted, setSubmitted] = useState(false);
-
     return (
-        <div
-            id="contact"
-            className='content-container'
-        >
+        <div id='contact' className='content-container'>
             <h1 className='title'>Contact</h1>
             <div id="contact-form-container">
-                <form
-                    method='POST'
-                >
+                <form method='POST'>
                     <div>
                         <label htmlFor='name'>Your name</label>
                         <input
