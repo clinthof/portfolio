@@ -38,14 +38,6 @@ const CustomLink = styled(Link)`
     color: white;
 `;
 
-const CardWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px 10px;
-    grid-template: auto auto auto;
-    border: 4px solid black;
-`;
-
 const ContactDiv = styled.div`
     width: 100%;
     padding: 12px 20px;
@@ -60,6 +52,5 @@ export {
     CustomNav,
     NavLinks,
     CustomLink,
-    CardWrapper,
     ContactDiv,
 }
