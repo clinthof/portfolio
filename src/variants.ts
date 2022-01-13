@@ -64,10 +64,31 @@ const socialChildVariant: Variants | undefined = {
     },
 }
 
+const cardWrapVariant: Variants | undefined = {
+    hidden: {
+    },
+    visible: {
+        transition: {
+            staggerChildren: 0.1,
+        }
+    },
+}
+
+const cardVariant: Variants | undefined = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+    },
+}
+
 export { 
     photoVariant,
     aboutBioVariant,
     bioChildVariant,
     socialGridVariant,
     socialChildVariant,
+    cardWrapVariant,
+    cardVariant,
 }
