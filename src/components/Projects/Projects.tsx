@@ -18,10 +18,10 @@ const Projects: React.FC = () => {
             >
                 {projects.map(project => 
                     <motion.div 
-                        key={project.id}
-                        variants={cardVariant}
                         className='project-card'
                         style={{'border': '2px solid black'}}
+                        key={project.id}
+                        variants={cardVariant}
                     >
                         Project
                     </motion.div>)}
@@ -38,9 +38,9 @@ const Projects: React.FC = () => {
             >
                 {skills.map(skill => 
                     <motion.div 
+                        className='skill-tile'
                         key={skill.skillName}
                         variants={cardVariant}
-                        className='skill-tile'
                     >
                         {skill.img}
                     </motion.div>)} 
