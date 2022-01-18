@@ -1,26 +1,22 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'wouter'
-import { links } from '../../data'
-
-const CustomNav = styled.div`
-    float: right;
-    right: 5%;
-    position: relative;
-`;
+import React from 'react';
+import { navLinks } from '../../data';
+import { CustomNav, CustomLink, Logo, NavLinks, } from '../../Styles';
 
 const Navbar: React.FC = () => {
     return (
-        <>
-            <CustomNav>
-                {links.map(link => 
-                    <Link to={link.url} key={link.id}>
-                        {link.text}
-                    </Link>
+        <CustomNav>
+            <Logo>
+                <CustomLink to='/'>felix.</CustomLink>
+            </Logo>
+            <NavLinks>
+                {navLinks.map(link => 
+                        <CustomLink to={link.url} key={link.id}>
+                            {link.text}
+                        </CustomLink>
                     )}
-            </CustomNav>        
-        </>
+            </NavLinks>
+        </CustomNav>
     )
-}
+};
 
-export default Navbar
+export default Navbar;
