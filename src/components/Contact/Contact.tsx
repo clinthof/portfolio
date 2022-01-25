@@ -1,34 +1,29 @@
 
 const Contact: React.FC = () => {
     return (
-        <div id='contact' className='content-container'>
-            <h1 className='title'>Contact</h1>
+        <div className='content-container' id='contact-container'>
+            <h1>Let's talk</h1>
             <div id="contact-form-container">
                 <form method='POST'>
-                    <div>
-                        <label htmlFor='name'>Your name</label>
+                    <div id='contact-email'>
+                        <label htmlFor='email'>Your email address</label>
                         <input
-                            type='text'
-                            name='name'
-                            placeholder='Name'
+                            className='form-field'
+                            id='email-field'
+                            type='email'
+                            name='email'
+                            placeholder='Email'
                             required
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor='email'>Your email</label>
-                        <input
-                                type='email'
-                                name='email'
-                                placeholder='Email'
-                                required
                             />
                     </div>
-                    <div>
+                    <div id='contact-message'>
                         <label htmlFor='message'>Message</label>
                         <textarea
-                                placeholder='Message'
-                                name='message'
-                                required
+                            className='form-field'
+                            id='message-field'
+                            placeholder='Message'
+                            name='message'
+                            required
                             />
                     </div>
                 </form>
