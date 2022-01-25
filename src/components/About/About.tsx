@@ -14,6 +14,7 @@ const About: React.FC = () => {
         <div id='about-page-container'>
             <motion.div 
                 className='content-container'
+                id='about-content-container'
                 variants={aboutBioVariant}
                 initial="hidden"
                 animate="visible"
