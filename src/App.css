@@ -1,154 +1,232 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 800px;
+}
+
+div a:hover {
+  color: rgb(107, 237, 204);
 }
 
 #about-page-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .content-container {
-    margin: 8% 0 0 8%;
-    letter-spacing: -2px;
-    font-weight: 700;
-    padding: 0 4rem;
+  margin: 4% 0 0 8%;
+  letter-spacing: -2px;
+  font-weight: 700;
+  padding: 0 4rem;
+  color: white;
+}
+
+#about-content-container {
+  margin: 8% 0 0 8%;
 }
 
 #about-greeting {
-    font-size: 10vh;
+  font-size: 10vh;
 }
 
 #about-intro {
-    margin-top: 4%;
-    font-size: 4vh;
+  margin-top: 4%;
+  font-size: 4vh;
 }
 
 #about-photo-wrapper {
-    float: right;
-    justify-self: center;
-    margin: 2vw;
+  float: right;
+  justify-self: center;
+  margin: 2vw;
 }
 
 #about-photo {
-    border-radius: 50%;
-    border: 6px solid white;
+  border-radius: 50%;
+  border: 6px solid white;
 }
 
 .social-link {
-    color: white;
+  color: white;
 }
 
 .social-link:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #social-links-container {
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: auto;
 }
 
 #social-links-container > div {
-    padding: 20px;
-    margin: 40px;
+  padding: 20px;
+  margin: 40px;
 }
 
 .social-icon {
-    display: flex;
-    transform: scale(2.5);
+  display: flex;
+  transform: scale(2.5);
 }
 
 @keyframes instaGradient {
-    0% { color: white; }
-    10% { color: #803db2 }
-    20% { color: #dd153c; }
-    40% { color: #f9cb00; }
-    60% { color: #f85100; }
-    80% { color: #bb307e; }
-    90% { color: #803db2 }
-    100% { color: white; }
+  0% {
+    color: white;
   }
-
-  @keyframes linkedInGradient {
-      0% { color: white; }
-      50% { color: #0a66c2; }
-      100% { color: white; }
+  10% {
+    color: #bb307e;
   }
+  20% {
+    color: #803db2;
+  }
+  40% {
+    color: #f9cb00;
+  }
+  60% {
+    color: #f85100;
+  }
+  80% {
+    color: #dd153c;
+  }
+  90% {
+    color: #803db2;
+  }
+  100% {
+    color: white;
+  }
+}
 
-  @keyframes gitGradient {
-    0% { color: white; }
-    50% { color: #800080; }
-    100% { color: white; }
+@keyframes linkedInGradient {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #0a66c2;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes gitGradient {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #800080;
+  }
+  100% {
+    color: white;
+  }
 }
 
 #github-profile:hover {
-    animation: gitGradient 2s infinite;
+  animation: gitGradient 2s infinite;
 }
 
 #linkedin-profile:hover {
-    animation: linkedInGradient 2s infinite;
+  animation: linkedInGradient 2s infinite;
 }
 
 #instagram-profile:hover {
-    animation: instaGradient 8s infinite;
+  animation: instaGradient 8s infinite;
 }
 
 .project-page-container {
-    display: grid;
-    margin: 2% 10% 0 0;
-}
-
-#projects-container {
-    color: white;
+  display: grid;
+  margin: 2% 10% 0 0;
 }
 
 .project-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    margin: 4%;
-    height: 350px;
-    background-color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  margin: 4%;
+  height: 350px;
+  background-color: rgb(61, 61, 61);
 }
 
 #card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px 10px;
-    grid-template: auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 10px;
+  grid-template: auto auto auto;
 }
 
 #skill-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template: auto;
-    background-color: rgb(27, 27, 27);
-    border-radius: 20px;
-    margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template: auto;
+  background-color: rgb(27, 27, 27);
+  border-radius: 20px;
+  margin-bottom: 5%;
 }
 
 .skill-tile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    margin: 4%;
-    font-size: 3em;
-    background-color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  margin: 4%;
+  font-size: 3em;
+  background-color: rgb(61, 61, 61);
 }
 
 .skill-img {
-    height: 80%;
+  height: 80%;
 }
 
 #resume-wrapper {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    margin: 4% 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 4% 0;
+}
+
+#contact-form-container {
+  display: grid;
+}
+
+#contact-email {
+  display: grid;
+  font-size: large;
+  /* border: 2px solid black; */
+  margin: 20px 0;
+  width: 25%;
+}
+
+#contact-message {
+  display: grid;
+  font-size: large;
+  /* border: 2px solid black; */
+  margin: 20px 0;
+  width: 50%;
+}
+
+#message-field {
+  height: 200px;
+}
+
+.form-field {
+  color: #333333;
+  resize: none;
+  outline-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px 0;
+  padding: 10px;
+  padding-left: 10px;
+  display: grid;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(218, 218, 218);
 }
