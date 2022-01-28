@@ -11,22 +11,22 @@ import {
 
 const Landing: React.FC = () => {
     return (
-        <div id='about-page-container'>
+        <div id='landing-page-container'>
             <motion.div 
                 className='content-container'
-                id='about-content-container'
+                id='landing-content-container'
                 variants={aboutBioVariant}
                 initial="hidden"
                 animate="visible"
             >
                 <motion.div 
                     className='title'
-                    id='about-greeting'
+                    id='landing-greeting'
                     variants={bioChildVariant}
                 >
                     Hi! I'm Felix.
                 </motion.div>
-                <motion.div id='about-intro' variants={bioChildVariant}>
+                <motion.div id='landing-intro' variants={bioChildVariant}>
                     I'm a recent computer science graduate
                     developing web applications with React.
                 </motion.div>
@@ -56,13 +56,13 @@ const Landing: React.FC = () => {
                 </motion.div>
             </motion.div>
             <motion.div
-                id='about-photo-wrapper'
+                id='landing-photo-wrapper'
                 variants={photoVariant}
                 initial="hidden"
                 animate="visible"
             >
                 <img
-                    id='about-photo' 
+                    id='landing-photo' 
                     alt='me'
                     src={String(profilePhoto)}
                 />

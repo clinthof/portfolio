@@ -12,7 +12,7 @@ div a:hover {
   color: rgb(107, 237, 204);
 }
 
-#about-page-container {
+#landing-page-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -25,26 +25,26 @@ div a:hover {
   color: white;
 }
 
-#about-content-container {
+#landing-content-container {
   margin: 8% 0 0 8%;
 }
 
-#about-greeting {
+#landing-greeting {
   font-size: 10vh;
 }
 
-#about-intro {
+#landing-intro {
   margin-top: 4%;
   font-size: 4vh;
 }
 
-#about-photo-wrapper {
+#landing-photo-wrapper {
   float: right;
   justify-self: center;
   margin: 2vw;
 }
 
-#about-photo {
+#landing-photo {
   border-radius: 50%;
   border: 6px solid white;
 }
