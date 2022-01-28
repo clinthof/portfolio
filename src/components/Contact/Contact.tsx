@@ -26,6 +26,11 @@ const Contact: React.FC = () => {
                             required
                             />
                     </div>
+                    <div id='submit-btn-wrapper'>
+                        <button id='submit-btn' type='submit'>
+                            Send
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
