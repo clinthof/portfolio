@@ -24,6 +24,10 @@ const landingBioVariant: Variants | undefined = {
             staggerChildren: 0.4,
         },
     },
+    exit: {
+        x: '-100vw',
+        transition: { ease: 'easeInOut'}
+    }
 }
 
 const bioChildVariant: Variants | undefined = {
