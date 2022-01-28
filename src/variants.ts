@@ -17,13 +17,17 @@ const photoVariant: Variants | undefined = {
     },
 };
 
-const aboutBioVariant: Variants | undefined = {
+const landingBioVariant: Variants | undefined = {
     hidden: {},
     visible: {
         transition: {
             staggerChildren: 0.4,
         },
     },
+    exit: {
+        x: '-100vw',
+        transition: { ease: 'easeInOut'}
+    }
 }
 
 const bioChildVariant: Variants | undefined = {
@@ -85,7 +89,7 @@ const cardVariant: Variants | undefined = {
 
 export { 
     photoVariant,
-    aboutBioVariant,
+    landingBioVariant,
     bioChildVariant,
     socialGridVariant,
     socialChildVariant,

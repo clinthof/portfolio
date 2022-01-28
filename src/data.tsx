@@ -142,6 +142,22 @@ const skills = [
             />,
     },
     {
+        skillName: 'Next',
+        img: <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt='next'
+                className='skill-img'
+        />
+    },
+    {
+        skillName: 'Redux',
+        img: <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                alt='redux'
+                className='skill-img'
+        />
+    },
+    {
         skillName: 'Vue',
         img: <img 
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
@@ -194,8 +210,9 @@ const skills = [
         img: <img 
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg"
                 alt='docker'    
+                className='skill-img'
             />
-    }
+    },
 ]
 
 export {navLinks, projects, profileLinks, skills};

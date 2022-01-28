@@ -15,7 +15,7 @@ const CustomNav = styled.nav`
     z-index: 999;
     position: sticky;
     top: 0;
-    background-color: #129272;
+    background-color: #131516;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 `;

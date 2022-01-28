@@ -4,10 +4,7 @@ import { cardWrapVariant, cardVariant } from '../../variants';
 
 const Projects: React.FC = () => {
     return (
-        <div 
-            className='content-container'
-            id='projects-container'
-        >
+        <div className='content-container'>
             <h1>Some things I've worked on lately</h1>
             <motion.div
                 className='project-page-container'
@@ -24,6 +21,7 @@ const Projects: React.FC = () => {
                         variants={cardVariant}
                     >
                         Project
+
                     </motion.div>)}
             </motion.div>
             <h1 style={{'marginTop': '5%'}}>
