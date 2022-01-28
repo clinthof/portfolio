@@ -16,8 +16,9 @@ const Landing: React.FC = () => {
                 className='content-container'
                 id='landing-content-container'
                 variants={landingBioVariant}
-                initial="hidden"
-                animate="visible"
+                initial='hidden'
+                animate='visible'
+                exit='exit'
             >
                 <motion.div 
                     className='title'
