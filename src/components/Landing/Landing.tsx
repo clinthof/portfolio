@@ -3,7 +3,7 @@ import profilePhoto from '../../assets/profile_photo.jpg';
 import { profileLinks } from '../../data';
 import { 
     photoVariant, 
-    aboutBioVariant, 
+    landingBioVariant, 
     bioChildVariant, 
     socialGridVariant,
     socialChildVariant, 
@@ -15,7 +15,7 @@ const Landing: React.FC = () => {
             <motion.div 
                 className='content-container'
                 id='landing-content-container'
-                variants={aboutBioVariant}
+                variants={landingBioVariant}
                 initial="hidden"
                 animate="visible"
             >
