@@ -12,6 +12,9 @@ div a:hover {
   color: rgb(107, 237, 204);
 }
 
+.active {
+}
+
 #landing-page-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
