@@ -234,3 +234,21 @@ div a:hover {
   border-color: rgb(107, 237, 204);
   box-shadow: 0 0 5px rgb(107, 237, 204);
 }
+
+#submit-btn {
+  padding: 10px 20px;
+  background-color: rgb(107, 237, 204);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+}
+
+#submit-btn:active {
+  background-color: rgb(70, 172, 146);
+}
