@@ -171,6 +171,7 @@ div a:hover {
 }
 
 .project-links {
+  border: 2px solid teal;
 }
 
 .project-info {
