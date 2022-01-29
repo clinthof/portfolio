@@ -5,26 +5,7 @@ import { cardWrapVariant, cardVariant } from '../../variants';
 const Projects: React.FC = () => {
     return (
         <div className='content-container'>
-            <h1>Some things I've worked on lately</h1>
-            <motion.div
-                className='project-page-container'
-                id='card-container'
-                variants={cardWrapVariant}
-                initial='hidden'
-                animate='visible'
-            >
-                {projects.map(project => 
-                    <motion.div 
-                        className='project-card'
-                        style={{'border': '2px solid black'}}
-                        key={project.id}
-                        variants={cardVariant}
-                    >
-                        Project
-
-                    </motion.div>)}
-            </motion.div>
-            <h1 style={{'marginTop': '5%'}}>
+                        <h1 style={{'marginTop': '5%'}}>
                 Some tools I've explored
             </h1>
             <motion.div 
@@ -42,6 +23,29 @@ const Projects: React.FC = () => {
                     >
                         {skill.img}
                     </motion.div>)} 
+            </motion.div>
+            <h1>Some things I've worked on lately</h1>
+            <motion.div
+                className='project-page-container'
+                id='card-container'
+                variants={cardWrapVariant}
+                initial='hidden'
+                animate='visible'
+            >
+                {projects.map(project => 
+                    <motion.div 
+                        className='project-card'
+                        key={project.id}
+                        variants={cardVariant}
+                    >
+                        <div className='project-thumbnail'>
+                            <div className='project-photo'>Project picture</div>
+                            <div className='project-links'>Project links</div>
+                        </div>
+                        <div className='project-info'>
+                            Project info
+                        </div>
+                    </motion.div>)}
             </motion.div>
         </div>
     )
