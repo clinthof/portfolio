@@ -12,8 +12,8 @@ div a:hover {
   color: rgb(107, 237, 204);
 }
 
-.active {
-}
+/* .active {
+} */
 
 #landing-page-container {
   display: grid;
@@ -144,20 +144,44 @@ div a:hover {
 }
 
 .project-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   border: 2px solid transparent;
-  border-radius: 30px;
-  margin: 4%;
+  border-radius: 10px;
+  margin: 2%;
   height: 350px;
   background-color: rgb(61, 61, 61);
+  transition: ease-in-out 0.4s;
+}
+
+.project-card:hover {
+  border-color: rgb(107, 237, 204);
+  box-shadow: 0 0 5px rgb(107, 237, 204);
+}
+
+.project-thumbnail {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  border: 2px solid red;
+  border-radius: 10px 0 0 10px;
+}
+
+.project-photo {
+  border: 2px solid salmon;
+}
+
+.project-links {
+}
+
+.project-info {
+  border: 2px solid purple;
+  border-radius: 0 10px 10px 0;
 }
 
 #card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px 10px;
+  grid-template-rows: repeat(3, 1fr);
+  border: 2px solid greenyellow;
   grid-template: auto auto auto;
 }
 
@@ -236,6 +260,7 @@ div a:hover {
   outline: none !important;
   border-color: rgb(107, 237, 204);
   box-shadow: 0 0 5px rgb(107, 237, 204);
+  transition: ease-in-out 0.2s;
 }
 
 #submit-btn {
