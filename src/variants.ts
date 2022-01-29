@@ -24,10 +24,6 @@ const landingBioVariant: Variants | undefined = {
             staggerChildren: 0.4,
         },
     },
-    exit: {
-        x: '-100vw',
-        transition: { ease: 'easeInOut'}
-    }
 }
 
 const bioChildVariant: Variants | undefined = {
@@ -40,6 +36,10 @@ const bioChildVariant: Variants | undefined = {
             duration: 0.4,
         },
     },
+    exit: {
+        x: '-100vw',
+        transition: { ease: 'easeInOut'}
+    }
 }
 
 const socialGridVariant: Variants | undefined = {
@@ -73,7 +73,7 @@ const cardWrapVariant: Variants | undefined = {
     },
     visible: {
         transition: {
-            staggerChildren: 0.1,
+            staggerChildren: 0.04,
         }
     },
 }
