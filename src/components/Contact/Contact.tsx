@@ -1,11 +1,22 @@
+import './Contact.css';
+import { motion } from 'framer-motion';
+import { staggerVariant, contactTextVariant } from '../../variants';
 
 const Contact: React.FC = () => {
     return (
         <div className='content-container' id='contact-container'>
             <h1>Let's talk</h1>
-            <div id="contact-form-container">
+            <motion.div
+                id='contact-form-container'
+                variants={staggerVariant}
+                initial='hidden'
+                animate='visible'
+            >
                 <form method='POST'>
-                    <div id='contact-email'>
+                    <motion.div
+                        id='contact-email'
+                        variants={contactTextVariant}
+                    >
                         <label htmlFor='email'>Your email address</label>
                         <input
                             className='form-field'
@@ -15,8 +26,11 @@ const Contact: React.FC = () => {
                             placeholder='Email'
                             required
                             />
-                    </div>
-                    <div id='contact-message'>
+                    </motion.div>
+                    <motion.div 
+                        id='contact-message'
+                        variants={contactTextVariant}
+                    >
                         <label htmlFor='message'>Message</label>
                         <textarea
                             className='form-field'
@@ -25,14 +39,17 @@ const Contact: React.FC = () => {
                             name='message'
                             required
                             />
-                    </div>
-                    <div id='submit-btn-wrapper'>
+                    </motion.div>
+                    <motion.div 
+                        id='submit-btn-wrapper'
+                        variants={contactTextVariant}
+                    >
                         <button id='submit-btn' type='submit'>
                             Send
                         </button>
-                    </div>
+                    </motion.div>
                 </form>
-            </div>
+            </motion.div>
         </div>
     )
 }
