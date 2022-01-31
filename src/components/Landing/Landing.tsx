@@ -1,3 +1,4 @@
+import './Landing.css';
 import { motion } from 'framer-motion';
 import profilePhoto from '../../assets/profile_photo.jpg';
 import { profileLinks } from '../../data';
