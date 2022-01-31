@@ -1,0 +1,11 @@
+#resume-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 4% 0;
+}
+
+#resume-img {
+  width: 60%;
+}
