@@ -1,3 +1,4 @@
+import './Landing.css';
 import { motion } from 'framer-motion';
 import profilePhoto from '../../assets/profile_photo.jpg';
 import { profileLinks } from '../../data';
@@ -18,7 +19,6 @@ const Landing: React.FC = () => {
                 variants={landingBioVariant}
                 initial='hidden'
                 animate='visible'
-                exit='exit'
             >
                 <motion.div 
                     className='title'

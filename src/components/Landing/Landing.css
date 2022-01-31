@@ -1,0 +1,114 @@
+#landing-page-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#landing-content-container {
+  margin: 8% 0 0 8%;
+}
+
+#landing-greeting {
+  font-size: 10vh;
+}
+
+#landing-intro {
+  margin-top: 4%;
+  font-size: 4vh;
+}
+
+#landing-photo-wrapper {
+  float: right;
+  justify-self: center;
+  margin: 2vw;
+}
+
+#landing-photo {
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+.social-link {
+  color: white;
+}
+
+.social-link:hover {
+  cursor: pointer;
+}
+
+#social-links-container {
+  display: flex;
+  margin: auto;
+}
+
+#social-links-container > div {
+  padding: 20px;
+  margin: 40px;
+}
+
+.social-icon {
+  display: flex;
+  transform: scale(2.5);
+}
+
+@keyframes instaGradient {
+  0% {
+    color: white;
+  }
+  10% {
+    color: #bb307e;
+  }
+  20% {
+    color: #803db2;
+  }
+  40% {
+    color: #f9cb00;
+  }
+  60% {
+    color: #f85100;
+  }
+  80% {
+    color: #dd153c;
+  }
+  90% {
+    color: #803db2;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes linkedInGradient {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #0a66c2;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes gitGradient {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #800080;
+  }
+  100% {
+    color: white;
+  }
+}
+
+#github-profile:hover {
+  animation: gitGradient 2s infinite;
+}
+
+#linkedin-profile:hover {
+  animation: linkedInGradient 2s infinite;
+}
+
+#instagram-profile:hover {
+  animation: instaGradient 8s infinite;
+}

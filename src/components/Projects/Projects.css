@@ -1,0 +1,101 @@
+.project-page-container {
+  display: grid;
+  margin: 2% 10% 0 0;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 2%;
+  height: 350px;
+  transition: ease-in-out 0.4s;
+}
+
+.project-card:hover {
+  border-color: rgb(107, 237, 204);
+  box-shadow: 0 0 5px rgb(107, 237, 204);
+}
+
+.project-thumbnail {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  border-radius: 10px 0 0 10px;
+}
+
+.project-image-wrapper {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 0;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template: auto;
+  align-items: center;
+  justify-items: center;
+  background-color: #1a1a24;
+  border-radius: 0 0 0 10px;
+}
+
+.project-info {
+  border-radius: 0 10px 10px 0;
+  background-color: #222229;
+}
+
+.project-card-title {
+  margin: 20px;
+}
+
+.project-card-description {
+  margin: 20px;
+  font-weight: 100;
+  color: rgb(190, 190, 190);
+}
+
+.project-card-description div {
+  margin: 10px;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 0;
+}
+
+.project-summary {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#card-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template: auto auto auto;
+}
+
+#skill-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template: auto;
+  background-color: rgb(27, 27, 27);
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+
+.skill-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  margin: 4%;
+  font-size: 3em;
+  background-color: #2e3234;
+}
+
+.skill-img {
+  height: 80%;
+}
