@@ -44,7 +44,6 @@ const bioChildVariant: Variants | undefined = {
 
 const socialGridVariant: Variants | undefined = {
     hidden: {
-
     },
     visible: {
         transition: {
@@ -68,7 +67,7 @@ const socialChildVariant: Variants | undefined = {
     },
 }
 
-const cardWrapVariant: Variants | undefined = {
+const staggerVariant: Variants | undefined = {
     hidden: {
     },
     visible: {
@@ -87,12 +86,28 @@ const cardVariant: Variants | undefined = {
     },
 }
 
+const contactTextVariant: Variants | undefined = {
+    hidden: {
+        x: '-20vw',
+        opacity: 0,
+    },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.04,
+            type: 'spring',
+        },
+    },
+}
+
 export { 
     photoVariant,
     landingBioVariant,
     bioChildVariant,
     socialGridVariant,
     socialChildVariant,
-    cardWrapVariant,
+    staggerVariant,
     cardVariant,
+    contactTextVariant,
 }
