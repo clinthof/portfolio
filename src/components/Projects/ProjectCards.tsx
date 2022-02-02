@@ -1,17 +1,11 @@
 import { projects } from "../../data";
-import { motion } from "framer-motion";
-import { cardVariant } from "../../variants";
 import './Projects.css';
 
 const ProjectCards = () => {
     return (
         <>
             {projects.map(project => 
-                <motion.div 
-                    className='project-card'
-                    key={project.id}
-                    variants={cardVariant}
-                >
+                <div className='project-card' key={project.id}>
                     <div className='project-thumbnail'>
                         <div className='project-image-wrapper'>
                             {project.image}
@@ -32,7 +26,8 @@ const ProjectCards = () => {
                             </div>
                         </div>
                     </div>
-                </motion.div>)}           
+                </div>
+            )}           
         </>
     )
 }
