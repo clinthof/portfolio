@@ -25,7 +25,7 @@
 }
 
 .project-image-wrapper {
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 10px 0 0 0;
 }
@@ -60,7 +60,7 @@
 }
 
 .project-image {
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 10px 0 0 0;
 }
