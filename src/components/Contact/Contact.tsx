@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
                         id='submit-btn-wrapper'
                         variants={contactTextVariant}
                     >
-                        <button id='submit-btn' type='submit'>
+                        <button disabled id='submit-btn' type='submit'>
                             Send
                         </button>
                     </motion.div>
