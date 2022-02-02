@@ -1,10 +1,8 @@
-import React from 'react';
+import './About.css';
 
 const About: React.FC = () => {
     return (
-        <div
-            style={{'color': 'white'}}
-        >
+        <div id='about-page-container'>
             The about page
         </div>
     )
