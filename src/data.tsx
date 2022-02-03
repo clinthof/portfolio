@@ -22,8 +22,8 @@ interface ProjectData {
     title: string,
     tools: string,
     description: string,
-    codeLink: { href: string, component: JSX.Element },
-    demoLink: { href: string, component: JSX.Element },
+    codeLink: Partial<{ href: string, component: JSX.Element }>,
+    demoLink: Partial<{ href: string, component: JSX.Element }>,
 }
 
 interface SkillData {
@@ -35,12 +35,12 @@ const profileLinks: Array<ProfileData> = [
     {
         id: 'github-profile',
         href: 'https://github.com/clinthof',
-        component: <GitHubIcon className='social-icon' />,
+        component: <GitHubIcon className='social-icon' id='github-profile'/>,
     },
     {
         id: 'linkedin-profile',
         href: 'https://www.linkedin.com/in/felix-clinthorne-6a3158123/',
-        component: <LinkedInIcon className='social-icon' />,
+        component: <LinkedInIcon className='social-icon' id='linkedin-profile'/>,
     },
     {
         id: 'instagram-profile',
@@ -98,10 +98,7 @@ const projects: Array<ProjectData> = [
             href: 'https://github.com/clinthof/team-civil-discourse',
             component: <GitHubIcon />
         },
-        demoLink: {
-            href: 'https://civil-discourse-map.herokuapp.com/',
-            component: <OpenInBrowserIcon />
-        },
+        demoLink: {},
     },
     {
         id: 3,
@@ -251,4 +248,5 @@ const skills: Array<SkillData> = [
     },
 ]
 
-export {navLinks, projects, profileLinks, skills};
+export { navLinks, projects, profileLinks, skills };
+export type { ProjectData };
