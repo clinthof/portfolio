@@ -9,19 +9,14 @@
   border: 2px solid transparent;
   border-radius: 10px;
   margin: 2%;
-  height: 350px;
   transition: ease-in-out 0.4s;
-}
-
-.project-card:hover {
-  border-color: rgb(107, 237, 204);
-  box-shadow: 0 0 5px rgb(107, 237, 204);
 }
 
 .project-thumbnail {
   display: grid;
   grid-template-rows: 2fr 1fr;
   border-radius: 10px 0 0 10px;
+  height: 100%;
 }
 
 .project-image-wrapper {
@@ -38,6 +33,10 @@
   justify-items: center;
   background-color: #1a1a24;
   border-radius: 0 0 0 10px;
+}
+
+.project-git-link svg:hover {
+  fill: #800080;
 }
 
 .project-info {
@@ -90,7 +89,7 @@
   justify-content: center;
   align-items: center;
   border: 2px solid transparent;
-  border-radius: 30px;
+  border-radius: 30%;
   margin: 4%;
   font-size: 3em;
   background-color: #2e3234;
