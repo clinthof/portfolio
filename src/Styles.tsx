@@ -36,6 +36,9 @@ const CustomLink = styled(Link)`
     margin: 0 20px;
     height: 60%;
     color: white;
+    &:hover {
+        color: rgb(107, 237, 204);
+    }
 `;
 
 const ContactDiv = styled.div`
