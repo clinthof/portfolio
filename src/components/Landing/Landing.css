@@ -77,36 +77,12 @@
   }
 }
 
-@keyframes linkedInGradient {
-  0% {
-    color: white;
-  }
-  50% {
-    color: #0a66c2;
-  }
-  100% {
-    color: white;
-  }
-}
-
-@keyframes gitGradient {
-  0% {
-    color: white;
-  }
-  50% {
-    color: #800080;
-  }
-  100% {
-    color: white;
-  }
-}
-
 #github-profile:hover {
-  animation: gitGradient 2s infinite;
+  fill: #800080;
 }
 
 #linkedin-profile:hover {
-  animation: linkedInGradient 2s infinite;
+  fill: #0a66c2;
 }
 
 #instagram-profile:hover {

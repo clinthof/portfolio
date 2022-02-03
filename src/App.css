@@ -8,13 +8,6 @@ body {
   min-height: 800px;
 }
 
-div a:hover {
-  color: rgb(107, 237, 204);
-}
-
-/* .active {
-} */
-
 .content-container {
   margin: 4% 0 0 8%;
   font-weight: 700;
