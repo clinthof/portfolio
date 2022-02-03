@@ -9,7 +9,9 @@ const Projects: React.FC = () => {
                 Some recent projects
             </h1>
             <div className='project-page-container' id='card-container'>
-                {projects.map(project => <ProjectCard project={project} />)}
+                {projects.map(project =>
+                    <ProjectCard project={project} key={project.id} />
+                )}
             </div>
             <h1 className='project-page-title'>
                 Toolbox
