@@ -1,7 +1,6 @@
-import React from 'react';
+import { CustomNav, CustomLink, Logo, NavLinks, } from '../../Styles';
 import { Link, useRoute } from 'wouter';
 import { navLinks } from '../../data';
-import { CustomNav, CustomLink, Logo, NavLinks, } from '../../Styles';
 
 const Navbar: React.FC = () => {
     const [isActive] = useRoute('');
