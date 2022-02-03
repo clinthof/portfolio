@@ -1,4 +1,6 @@
-import { CustomNav, CustomLink, Logo, NavLinks, } from '../../Styles';
+import './Navbar.css';
+import { CustomNav, NavLink, Logo, NavLinks, LogoLink, } from '../../Styles';
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 import { Link, useRoute } from 'wouter';
 import { navLinks } from '../../data';
 
@@ -8,17 +10,18 @@ const Navbar: React.FC = () => {
     return (
         <CustomNav>
             <Logo>
-                <CustomLink to='/'>felix.</CustomLink>
+                <LogoLink to='/'>felix.</LogoLink>
             </Logo>
             <NavLinks>
                 {navLinks.map(link => 
                         <Link to={link.url} key={link.id}>
-                            <CustomLink className={isActive ? 'active' : ''}>
+                            <NavLink className={isActive ? 'active' : ''}>
                                 {link.text}
-                            </CustomLink>
+                            </NavLink>
                         </Link>
                     )}
             </NavLinks>
+            <MenuSharpIcon id='hamburger-menu-btn'/>
         </CustomNav>
     )
 };

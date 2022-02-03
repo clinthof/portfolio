@@ -1,0 +1,17 @@
+#hamburger-menu-btn {
+  display: none;
+  position: absolute;
+  right: 0%;
+  align-self: center;
+  transform: scale(1.5);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  #hamburger-menu-btn {
+    display: flex;
+    margin-left: 60vw;
+    margin-right: 5%;
+  }
+}

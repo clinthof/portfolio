@@ -6,6 +6,21 @@ const Logo = styled.h3`
     font-size: x-large;
 `;
 
+const LogoLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    margin: 0 20px;
+    height: 60%;
+    color: white;
+    &:hover {
+        color: rgb(107, 237, 204);
+    }
+`;
+
 const CustomNav = styled.nav`
     height: 70px;
     width: 100%;
@@ -24,9 +39,12 @@ const NavLinks = styled.div`
     display: flex;
     margin-left: auto;
     font-weight: 600;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
 `;
 
-const CustomLink = styled(Link)`
+const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     align-self: center;
@@ -39,6 +57,10 @@ const CustomLink = styled(Link)`
     &:hover {
         color: rgb(107, 237, 204);
     }
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        border-top: 1px solid white;
+    }
 `;
 
 const ContactDiv = styled.div`
@@ -50,10 +72,11 @@ const ContactDiv = styled.div`
     box-sizing: border-box;
 `;
 
-export { 
+export {
     Logo,
+    LogoLink,
     CustomNav,
     NavLinks,
-    CustomLink,
+    NavLink,
     ContactDiv,
 }
