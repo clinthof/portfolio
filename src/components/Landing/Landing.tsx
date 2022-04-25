@@ -31,16 +31,10 @@ const Landing: React.FC = () => {
                     I'm a recent computer science graduate
                     developing web applications with React.
                 </motion.div>
-                <motion.div 
-                    id='social-links-container'
-                    variants={socialGridVariant}
-                >
+                <motion.div id='social-links-container' variants={socialGridVariant}>
                     {profileLinks.map(socialLink => {
                         return(
-                            <motion.div
-                                variants={socialChildVariant}
-                                key={socialLink.href}
-                            >
+                            <motion.div variants={socialChildVariant} key={socialLink.href}>
                                 <a  
                                     key={socialLink.href}
                                     target='_blank'
@@ -62,11 +56,7 @@ const Landing: React.FC = () => {
                 initial="hidden"
                 animate="visible"
             >
-                <img
-                    id='landing-photo' 
-                    alt='me'
-                    src={String(profilePhoto)}
-                />
+                <img id='landing-photo' alt='me' src={String(profilePhoto)} />
             </motion.div>
         </div>
     )
