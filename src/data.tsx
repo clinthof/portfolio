@@ -8,12 +8,6 @@ interface ProfileData {
     component: JSX.Element
 }
 
-interface LinkData {
-    id: number,
-    text: string,
-    url: string,
-}
-
 interface ProjectData {
     id: number,
     image: JSX.Element,
@@ -22,11 +16,6 @@ interface ProjectData {
     description: string,
     codeLink: Partial<{ href: string, component: JSX.Element }>,
     demoLink: Partial<{ href: string, component: JSX.Element }>,
-}
-
-interface SkillData {
-    skillName: string,
-    img: JSX.Element,
 }
 
 const profileLinks: Array<ProfileData> = [

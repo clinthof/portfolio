@@ -8,12 +8,13 @@
 }
 
 #landing-greeting {
-  font-size: 10vh;
+  /* font-size: 10vh; */
+  font-size: 75px;
 }
 
 #landing-intro {
   margin-top: 4%;
-  font-size: 4vh;
+  font-size: 40px;
 }
 
 #landing-photo-wrapper {
